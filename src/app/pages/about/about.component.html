@@ -1,1 +1,101 @@
-<p>about works!</p>
+<div class="main-content">
+    <section>
+        <h1>About the ConversionApp</h1>
+        <p>This project was generated with <code><a href="https://github.com/angular/angular-cli">Angular CLI</a></code>
+            version 17.3.5.</p>
+        <p>This application was produced as the third coding assignment in the course </p>
+        <pre> VT2024 <a href="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT208G/">DT208G</a> Datateknik GR (B), Programmering i TypeScript (distans)</pre>
+
+    </section>
+    <section>
+        <h2>Construction and Architecture</h2>
+        <p>This application serves to ease the process of converting units between different measurement systems such as
+            meters to feet or Celsius to Fahrenheit. Below, I detail the construction of the site, the techniques
+            utilized, and the key learnings from my development journey.</p>
+    </section>
+    <section>
+        <h2>Key Components</h2>
+        <ul>
+            <li><strong>Angular Components:</strong> The application's structure is defined by several Angular
+                components, including HomeComponent, AboutComponent, ConversionComponent,footerComponent,
+                headerComponent, pictureShowComponent and SecretAreaComponent. These components are routed using
+                Angular's RouterModule, ensuring seamless navigation and a clear separation of concerns.</li>
+            <li><strong>Routes:</strong> Our routing setup is defined in a specific routes configuration, which not only
+                directs the basic navigation like Home, About, and Conversion pages but also handles redirects and
+                errors, pointing to a SecretAreaComponent for any undefined routes.</li>
+            <li><strong>Data Binding and Forms:</strong> The ConversionComponent is crucial as it handles the real-time
+                conversion logic. Utilizing Angular’s FormsModule, this component allows for two-way data binding of
+                user inputs, enabling instant calculation as data is entered or changed.</li>
+            <li><strong>Styling with SCSS:</strong> Styling across the application is managed using SCSS for modular and
+                scalable CSS management. This includes specific styles for navigation, forms, and the footer, providing
+                a cohesive and responsive design.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Techniques Employed</h2>
+        <p>Key techniques employed in the development of this app include:</p>
+        <ul>
+            <li>Component-Based Architecture</li>
+            <li>Reactive Forms</li>
+            <li>Routing</li>
+            <li>Data binding</li>
+            <li>SCSS for Design</li>
+            <li><a href="https://github.com/Fa-collab1/ts-angular-conversion-app">GitHub</a></li>
+            <li>Published on <a href="https://main--dynamic-semolina-85b87c.netlify.app/">Netlify</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Lessons Learned</h2>
+        <p>This project was not only about implementing functionality but also about my first learning experience with
+            Angular. It was not easy to understand at first, but I think it has gotten a little clearer now.</p>
+        <p>Publishing to Heroku, with this I failed utterly, but Netlify "just worked instantly", so I chose to go with
+            Netlify for this project.</p>
+        <p>Developing the Conversion App has been a rewarding journey, pushing the boundaries of my skills in front-end
+            development.</p>
+        <p>I really do like not having to copy the navigation bar and footer to every single page as we have done
+            before. Changes to it used to be such a hazzle.</p>
+        <p>It was also really easy to incorporate modules. The modular way of working is really great!</p>
+        <p>I'm not quite sure If I have put to much css in the main css file or not though.</p>
+
+    </section>
+
+<div id="divider"></div>
+
+    <section>
+        <h2>Development server</h2>
+        <p>Run <code>ng serve</code> for a dev server. Navigate to <code>http://localhost:4200/</code>. The application
+            will automatically reload if you change any of the source files.</p>
+    </section>
+
+    <section>
+        <h2>Code scaffolding</h2>
+        <p>Run <code>ng generate component component-name</code> to generate a new component. You can also use
+            <code>ng generate directive|pipe|service|class|guard|interface|enum|module</code>.</p>
+    </section>
+
+    <section>
+        <h2>Build</h2>
+        <p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code>
+            directory.</p>
+    </section>
+
+    <section>
+        <h2>Running unit tests</h2>
+        <p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.
+            (this I haven't tried)</p>
+    </section>
+
+    <section>
+        <h2>Running end-to-end tests</h2>
+        <p>Run <code>ng e2e</code> to execute the end-to-end tests via a platform of your choice. To use this command,
+            you need to first add a package that implements end-to-end testing capabilities. (this I haven't tried)</p>
+    </section>
+
+    <section>
+        <h2>Further help</h2>
+        <p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a
+                href="https://angular.io/cli">Angular CLI Overview and Command Reference</a> page.</p>
+    </section>
+
+
+</div>

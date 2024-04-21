@@ -1,37 +1,40 @@
+<div class="main-content">
+  <h1>Unit Converter</h1>
+  <ul>
+    <li><code>Value</code> and <code>from-unit</code> are required fields</li>
+    <li>The <code>result</code> will be shown underneath the form</li>
+    <li>Calculation is done instantly</li>
+    <li>Decimal numbers and integers are both ok for the <code>Value</code> field</li>
+</ul>
 
+</div>
 
+<div id="conversion-form">
+<div>
+  <label for="value">Value:</label>
+  <!-- Ändra [(ngModelChange)] för inputValue -->
+  <input type="number" id="value" [ngModel]="inputValue" (ngModelChange)="handleInputChange($event)"
+    placeholder="Enter value">
+</div>
 
-<div class="conversion-container">
-    <h2>Unit Converter</h2>
-  
-    <div>
-      <label for="value">Value:</label>
-      <!-- Ändra [(ngModelChange)] för inputValue -->
-      <input type="number" id="value" [ngModel]="inputValue" (ngModelChange)="handleInputChange($event)" placeholder="Enter value">
-    </div>
-  
-    <div>
-      <label for="fromUnit">From:</label>
-      <select id="fromUnit" [(ngModel)]="fromUnit" (ngModelChange)="updateToUnit()">
-        <option value="meters">Meters</option>
-        <option value="feet">Feet</option>
-        <option value="celsius">Celsius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-      </select>
-    </div>
-    <label for="toUnit">To:</label>
-      <!-- Ändras med automatik beroende på enhet 1 -->
-      <select id="toUnit" [(ngModel)]="toUnit" disabled>
-        <option value="meters">Meters</option>
-        <option value="feet">Feet</option>
-        <option value="celsius">Celsius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-      </select>
-      
-    </div>
-  
-    
-  
-    <h3>{{ conversionResult }}</h3>
-  
-  
+<div>
+  <label for="fromUnit">From-unit:</label>
+  <select id="fromUnit" [(ngModel)]="fromUnit" (ngModelChange)="updateToUnit()">
+    <option value="meters">Meters</option>
+    <option value="feet">Feet</option>
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+  </select>
+</div>
+<div>
+<label for="toUnit">To-unit:</label>
+<!-- Ändras med automatik beroende på enhet 1 -->
+<select id="toUnit" [(ngModel)]="toUnit" disabled>
+  <option value="meters">Meters</option>
+  <option value="feet">Feet</option>
+  <option value="celsius">Celsius</option>
+  <option value="fahrenheit">Fahrenheit</option>
+</select>
+</div>
+<h3 id="conversionResult">{{ conversionResult }}</h3>
+</div>

@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-
+import { NgOptimizedImage } from '@angular/common'
+import { PictureShowComponent } from '../../picture-show/picture-show.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage, PictureShowComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
+ 
 
-  
-
-// The Path has to be exact.
-// Check your project folder hierarchy for that.
 })
 
 

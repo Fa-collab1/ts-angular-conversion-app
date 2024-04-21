@@ -1,0 +1,8 @@
+<pre>Click on the image to swap it!</pre>
+<div id="image-container">
+    <img [src]="url" 
+         (click)="toggle()" 
+         (load)="loaded($event)"
+         *ngIf="toLoad" >
+</div>
+<pre >*The Picture swapper utility is based mainly on code from <a href="https://stackblitz.com/edit/angular-playing-image-src">https://stackblitz.com/edit/angular-playing-image-src</a> </pre>
