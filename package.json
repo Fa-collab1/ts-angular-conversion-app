@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "postbuild": "ng build --aot configuration production",
+    "postbuild": "ng build --configuration production",
     "e2e": "ng e2e"
   },
   "private": true,
