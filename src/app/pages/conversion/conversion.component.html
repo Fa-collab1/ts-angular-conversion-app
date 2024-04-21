@@ -1,1 +1,37 @@
-<p>conversion works!</p>
+
+
+
+<div class="conversion-container">
+    <h2>Unit Converter</h2>
+  
+    <div>
+      <label for="value">Value:</label>
+      <!-- Ändra [(ngModelChange)] för inputValue -->
+      <input type="number" id="value" [ngModel]="inputValue" (ngModelChange)="handleInputChange($event)" placeholder="Enter value">
+    </div>
+  
+    <div>
+      <label for="fromUnit">From:</label>
+      <select id="fromUnit" [(ngModel)]="fromUnit" (ngModelChange)="updateToUnit()">
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+    </div>
+    <label for="toUnit">To:</label>
+      <!-- Ändras med automatik beroende på enhet 1 -->
+      <select id="toUnit" [(ngModel)]="toUnit" disabled>
+        <option value="meters">Meters</option>
+        <option value="feet">Feet</option>
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+      </select>
+      
+    </div>
+  
+    
+  
+    <h3>{{ conversionResult }}</h3>
+  
+  
