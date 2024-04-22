@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+html {
+  overflow-y: scroll; // Always show the vertical scrollbar so that the layout does not shift for the menu etc. when navigating between pages
+}
+
 
 .main-content {
   display: flex;

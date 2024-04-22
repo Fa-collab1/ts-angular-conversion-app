@@ -5,9 +5,17 @@ nav {
   height: 3em;
   padding-top: 0.7em;
   font-size: 1.7em;
+  
 
   @media (max-width: 600px) {
     font-size: 1em;
+}
+
+img {
+  height: 2em; 
+  vertical-align: middle;
+  margin: 0; 
+  margin-right: 2vw;
 }
 
 
@@ -55,3 +63,5 @@ nav {
 }
 
 
+
+  
