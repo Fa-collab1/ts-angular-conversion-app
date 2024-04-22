@@ -2,7 +2,31 @@ p {
     line-height: 1.5;
 }
 
-#divider {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2vw;
+    padding: 0.1vw;
+
+    @media (max-width: 600px) {
+    
+        grid-template-columns: 1fr;  /* Only one column on small screens */
+        
+    }
+
+    section, pre {
+        white-space: pre-wrap; /* Allows the text to wrap */
+            word-break: break-word; /* Ensures long words do not cause overflow */
+            overflow-wrap: break-word; /* Alternative to word-break for wrapping */
+    
+        
+    }
+
+    
+
+}
+
+#divider { // a line that divides my sections from the auto-generated sections
     border-bottom: 1px solid black;
     margin: 1em 0;
     width: 100%;

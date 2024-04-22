@@ -12,7 +12,6 @@
 <div id="conversion-form">
 <div>
   <label for="value">Value:</label>
-  <!-- Ändra [(ngModelChange)] för inputValue -->
   <input type="number" id="value" [ngModel]="inputValue" (ngModelChange)="handleInputChange($event)"
     placeholder="Enter value">
 </div>
@@ -28,7 +27,7 @@
 </div>
 <div>
 <label for="toUnit">To-unit:</label>
-<!-- Ändras med automatik beroende på enhet 1 -->
+<!-- Changes automatically based on from-unit -->
 <select id="toUnit" [(ngModel)]="toUnit" disabled>
   <option value="meters">Meters</option>
   <option value="feet">Feet</option>
